@@ -1,0 +1,202 @@
+
+/* Global Layout */
+* {
+  card-sizing: border-card;
+}
+/* Type Selectors */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  background-color: #cceeff;
+}
+
+header {
+  padding: 1em 0;
+}
+.main-header {
+  margin: 0 auto;
+}
+.banner {
+  padding: 1em;
+}
+footer {
+  padding: 1.5em 0;
+  margin: 0 auto;
+  border-top: grey solid 1px;
+  width: 90vw;
+}
+.main-nav li {
+  margin: .5em 1em;
+  background-color: #e6e6fa;
+  color: black;
+}
+li {
+  padding: .5em 1em;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-weight: 300;
+}
+h3 {
+  font-weight: 400;
+}
+/* Class/Descendant/ID Selectors */
+.section-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 2.5em 0 2.5em 0;
+}
+.card {
+  padding: .5em;
+}
+.profile-image {
+  padding: 2em 0 .5em;
+  width: 70%;
+}
+.portfolio-section {
+  background: #eefede;
+  padding-top: .5em;
+}
+.card-container {
+  padding: .5em;
+}
+.skills-section,
+.contact-section {
+  padding: 0 1em;
+}
+.skills
+.nav {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+}
+.portfolio-section,
+.contact-section {
+  margin: 1em 0 3em;
+}
+
+.footer-name {
+  font-size: 1em;
+  margin: 0;
+  padding-top: 8px;
+}
+.footer {
+  display: none;
+}
+/* Flexcard */
+.main-header,
+.footer-section {
+  display: flex;
+}
+.footer-section {
+  justify-content: space-between;
+}
+.main-header {
+  flex-direction: column;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .main-nav li {
+    background: none;
+    padding: 1em;
+  }
+  .tagline {
+    text-align: left;
+    margin: 0;
+  }
+  .tagline,
+  .contact-section p,
+  .skills-section p {
+    font-size: 1.2em;
+  }
+  .tagline {
+    padding: 2em 1em .5em;
+  }
+  .profile-image {
+    padding: 2em 0 1em 2em;
+    width: 45%;
+  }
+
+  .banner,
+  .card-container,
+  .nav-container,
+  .footer-nav {
+    display: flex;
+  }
+  .card {
+    flex: 1 50%;
+  }
+  .banner {
+    padding: 0 2em;
+  }
+  .tagline {
+    flex-grow: 1.4;
+  }
+  .nav-container {
+    justify-content: center;
+  }
+  .card-container {
+    flex-wrap: wrap;
+    padding: 0 1.5em;
+  }
+  .banner {
+    flex-direction: row-reverse;
+  }
+  .footer-section {
+    justify-content: space-around;
+  }
+  .footer-name {
+    margin-right: auto;
+  }
+  .contact-section p {
+    padding: 0 15% 1em;
+  }
+  .card p {
+    padding: 0 2em 1em;
+  }
+  .footer {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hide {
+    display: none;
+  }
+  .card {
+    flex: 1 33.3%;
+  }
+  .card p {
+    padding: 0 .2em 1em;
+  }
+  .contact-section p {
+    padding: 0 20% 1em;
+  }
+  .main-header {
+    flex-direction: row;
+    padding: 0 1em;
+  }
+  .name {
+    margin-right: auto;
+  }
+  #top {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
+  .wrapper {
+    margin: 0 2em;
+  }
+}
